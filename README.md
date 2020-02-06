@@ -12,3 +12,5 @@ HTTP协议学习
 - cors ：跨域
 
 - csp ：资源访问限制
+
+- connection：长连接
