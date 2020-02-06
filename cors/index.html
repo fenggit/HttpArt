@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>send get request:http://localhost:8888/</p>
+<p id="content"></p>
+<!--1.普通请求-->
+<script>
+    // 模拟跨域-请求
+    // Failed to load http://localhost:8888/: No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'http://localhost:8887' is therefore not allowed access.
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'http://localhost:8888/');
+    var d = xhr.send();
+    var p = document.getElementById("content");
+    p.innerHTML = d;
+    // 跨域：请求还是正常走的，只不过浏览器发现，拦截的
+    // 服务器设置head：'Access-Control-Allow-Origin':'*'
+</script>
+
+<!--2.jsonp的方式请求-->
+<script src="http://127.0.0.1:8888/"></script>
+</body>
+</html>
