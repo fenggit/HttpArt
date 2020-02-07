@@ -1,9 +1,9 @@
 # HttpArt
 HTTP协议学习
 
-服务端基于：Nodejs
+基于 Node.js
 
-- simple-server：简单的nodejs server
+- simple-server：简单的服务
 
 - cache : 演示缓存
 
