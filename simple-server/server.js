@@ -9,7 +9,7 @@ http.createServer(function (request, response) {
         // HTTP/1.1 默认开启长连接：Connection: keep-alive
         //'Connection':'keep-alive'
     });
-    response.end("success");
+    response.end("This is content");
 }).listen(8081);
 
 console.log("server listening on 8081");
